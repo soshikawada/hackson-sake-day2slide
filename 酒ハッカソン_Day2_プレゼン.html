@@ -965,6 +965,33 @@ const DECK = {
       sub: "TOUCH SESSION",
     },
 
+    /* === 11-2. タッチセッション 各回の時間（第1〜第4）================
+     *  休憩スライド(brk)の型を流用：タイトル＝第○セッション／大きな時刻＝終了時刻 */
+    {
+      type: "brk",
+      title: "第1セッション",
+      resume: "14:50 まで",
+      sub: "TOUCH SESSION　14:30 〜 14:50（6チーム）",
+    },
+    {
+      type: "brk",
+      title: "第2セッション",
+      resume: "15:20 まで",
+      sub: "TOUCH SESSION　15:00 〜 15:20（5チーム）",
+    },
+    {
+      type: "brk",
+      title: "第3セッション",
+      resume: "15:50 まで",
+      sub: "TOUCH SESSION　15:30 〜 15:50（5チーム）",
+    },
+    {
+      type: "brk",
+      title: "第4セッション",
+      resume: "16:20 まで",
+      sub: "TOUCH SESSION　16:00 〜 16:20（5チーム）",
+    },
+
     /* === 12. 投票のご案内 ======================================== */
     {
       type: "about",
@@ -1402,7 +1429,7 @@ const PITCH_TEAMS = [
 ];
 
 </script>
-<script>var DECK_VERSION = "629110a0ecfb";</script>
+<script>var DECK_VERSION = "eff9e06920e3";</script>
 <script>
 /* =====================================================================
  *  酒 × ハッカソン  司会用プレゼン  スライドエンジン
