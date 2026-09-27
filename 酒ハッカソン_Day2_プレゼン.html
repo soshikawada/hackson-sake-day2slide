@@ -762,6 +762,10 @@ html, body {
 .ev-top .notice-qr.ev-qr .notice-qr-label { font-size: 21px; }
 .slide.pitch .pitch-name { margin-top: 0; }
 
+/* 2026-09-27 オーナー指示：画面下のページ番号（136 / 152）と、ページを飛ばせる□（ドット）を非表示
+ *   キー操作（← → 数字など）はそのまま使える。戻すときはこのブロックを消す */
+.pager, .dots { display: none !important; }
+
 </style>
 </head>
 <body>
@@ -1102,7 +1106,7 @@ const DECK = {
       kickerJa: "次回のご案内",
       // 出典：チラシ「海の幸ハッカソン_A4チラシ_2校正0925.pdf」（北陸の海の幸×ハッカソン/context/）
       title: '<span class="accent">石川の海の幸</span> × ハッカソン',
-      banner: "東京都・石川県 合同　─　#いしかわの海の幸をアプデせよ！",
+      banner: "石川県・豊洲市場 合同　─　#いしかわの海の幸をアプデせよ！",
       image: "images/next-海の幸ハッカソン_ロゴ.jpg",   // チラシ上半分を切り抜き
       figWide: true,        // 右列（チラシ画像＋QR）を広く・大きく
       qr: "images/qr-次回ハッカソン申込.png",          // 申込（LINE）
@@ -1125,6 +1129,7 @@ const DECK = {
      * ============================================================ */
     {
       type: "event",
+      hidden: true,   // 2026-09-27 オーナー指示で非表示（戻すときはこの行を消す）
       kicker: "NEXT",
       kickerJa: "次回のご案内",
       title: '<span class="accent">石川の海の幸</span> × ハッカソン',
@@ -1429,7 +1434,7 @@ const PITCH_TEAMS = [
 ];
 
 </script>
-<script>var DECK_VERSION = "faa81ae0d541";</script>
+<script>var DECK_VERSION = "6c1b9c2ca426";</script>
 <script>
 /* =====================================================================
  *  酒 × ハッカソン  司会用プレゼン  スライドエンジン
