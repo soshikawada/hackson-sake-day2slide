@@ -1,0 +1,19 @@
+# 公開（GitHub Pages）するのは Day2 本番に必要なものだけ。それ以外は全部除外（ホワイトリスト方式）
+/*
+!/.gitignore
+!/index.html
+!/酒ハッカソン_Day2_プレゼン.html
+!/audio/
+!/images/
+/images/*
+!/images/cloud1.png
+!/images/cloud3.png
+!/images/cloud5.png
+!/images/cloud7.png
+!/images/logo.png
+!/images/next-海の幸ハッカソン_ロゴ.jpg
+!/images/qr-アンケート.png
+!/images/qr-次回ハッカソン申込.png
+!/images/pitch/
+# 辞退チーム（チームE かっくん）の資料は公開しない
+/images/pitch/12/
